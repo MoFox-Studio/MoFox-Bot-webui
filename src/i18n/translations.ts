@@ -34,6 +34,7 @@ export const translations = {
       config: '配置中心',
       logs: '日志查看器',
       theme: '主题定制器',
+      github: '访问GitHub仓库',
       logout: '登出',
     },
     
@@ -231,6 +232,7 @@ export const translations = {
       config: 'Configuration',
       logs: 'Log Viewer',
       theme: 'Theme Customizer',
+      github: 'Visit GitHub Repository',
       logout: 'Logout',
     },
     

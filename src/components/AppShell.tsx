@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { motion } from 'motion/react';
-import { LayoutDashboard, Settings, Terminal, Palette, LogOut, Sun, Moon, Languages } from 'lucide-react';
+import { LayoutDashboard, Settings, Terminal, Palette, LogOut, Sun, Moon, Languages, Github } from 'lucide-react';
 import { Button } from './ui/button';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -137,11 +137,30 @@ export function AppShell({ children, currentView, onViewChange, onLogout, isDark
           </Button>
         </motion.div>
 
-        {/* Logout */}
+        {/* GitHub Link */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.4 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <Button
+            onClick={() => window.open('https://github.com/MoFox-Studio/MoFox_Bot', '_blank')}
+            variant="ghost"
+            size="icon"
+            className="w-12 h-12 rounded-2xl glass-hover hover:border-primary/50 hover:text-primary relative z-10 mb-2"
+            title={t.nav.github}
+          >
+            <Github className="w-5 h-5" />
+          </Button>
+        </motion.div>
+
+        {/* Logout */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.55, duration: 0.4 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

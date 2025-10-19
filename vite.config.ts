@@ -50,11 +50,17 @@
       },
     },
     build: {
-      target: 'esnext',
+      target: 'esne',
       outDir: 'build',
     },
     server: {
+      host: 'localhost',
       port: 3000,
       open: true,
+      allowedHosts: [
+        'ksevafqduovy.ap-southeast-1.clawcloudrun.com',
+        'demo.mofox-sama.com',
+        'demo.43land.fun'
+      ],
     },
   });
